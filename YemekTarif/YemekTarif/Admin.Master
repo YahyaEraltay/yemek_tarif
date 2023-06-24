@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YemekTarif.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            text-align: left;
+
+        }
+        .auto-style3 {
+            width: 100%;
+        }
+        .auto-style4 {
+            font-size: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style=" height:150px; width:700px; margin-left:400px; background-color:darkmagenta;"></div>
+        <div style=" height:20px; width:700px; margin-left:400px;">&nbsp;</div>
+        <div style=" margin-left:400px; width:700px; height:300px">
+            <div style="width:200px; height:auto; float:left; margin-left:0px; background-color:darkmagenta" class="auto-style2">
+                <table class="auto-style3">
+                    <tr>
+                        <td class="auto-style4"><strong>MENÜLER</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="AdminKategori.aspx" class="auto-style4"><strong>KATEGORİLER</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="AdminYemek.aspx" class="auto-style4"<strong ><strong>YEMEKLER</strong></strong></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="AdminYorumlar.aspx"><strong>YORUMLAR</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="Adminiletisim.aspx"><strong >MESAJLAR </strong></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="AdminGununYemegi.aspx"><strong >GÜNÜN YEMEĞİ</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="AdminTarif.aspx"><strong>TARİFLER</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #FFFFFF"><a href="AdminHakkımızda.aspx"><strong >HAKKIMIZDA</strong></a></td>
+                    </tr>
+                </table>
+                <br />
+                </div>
+            <div style="width:450px; height:auto; float:left; margin-left:50px; background-color:darkmagenta;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
